@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="pt" data-active="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mumma — Política de Privacidade</title>
+  <meta name="description" content="A Mumma não recolhe nada. Não há servidor, não há conta, e a app nunca faz um pedido à internet." />
+  <style>
+    :root {
+      --canvas: #FBF7F0;
+      --card: #FFFDF9;
+      --border: #E2D6C4;
+      --ink: #2E2A24;
+      --muted: #6B6355;
+      --accent: #9E6348;
+      --sage: #4D796D;
+      --on-sage: #FFFDF9;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --canvas: #1A1614;
+        --card: #221D18;
+        --border: #3A322A;
+        --ink: #F3ECE1;
+        --muted: #B3A899;
+        --accent: #D8A183;
+        --sage: #86AB9D;
+        --on-sage: #1A1614;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--muted);
+      background: var(--canvas);
+      line-height: 1.65;
+      padding: 48px 20px 80px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 660px; margin: 0 auto; }
+    header { margin-bottom: 28px; }
+    h1 {
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      font-size: 34px; font-weight: 400; color: var(--ink);
+      letter-spacing: -0.01em; line-height: 1.15;
+    }
+    .tagline { margin-top: 8px; font-size: 15px; }
+    .lang-toggle { margin: 24px 0 28px; }
+    .lang-toggle button {
+      background: var(--card); border: 1px solid var(--border); color: var(--muted);
+      font: inherit; font-size: 14px; padding: 7px 16px; border-radius: 999px;
+      cursor: pointer; margin-right: 6px;
+    }
+    .lang-toggle button.active { background: var(--accent); color: var(--on-sage); border-color: var(--accent); }
+    .summary {
+      background: var(--sage); color: var(--on-sage);
+      border-radius: 22px; padding: 26px; margin-bottom: 26px;
+    }
+    .summary h2 {
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      font-size: 24px; font-weight: 400; margin-bottom: 8px;
+    }
+    .summary p { color: var(--on-sage); opacity: 0.92; font-size: 15px; }
+    section { margin-bottom: 30px; }
+    h2 {
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      font-size: 22px; font-weight: 400; color: var(--ink); margin-bottom: 10px;
+    }
+    p { font-size: 15.5px; margin-bottom: 10px; }
+    a { color: var(--accent); }
+    footer {
+      border-top: 1px solid var(--border); margin-top: 40px; padding-top: 20px;
+      font-size: 13.5px;
+    }
+    [data-lang] { display: none; }
+    html[data-active="pt"] [data-lang="pt"] { display: block; }
+    html[data-active="en"] [data-lang="en"] { display: block; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Mumma</h1>
+      <p class="tagline">
+        <span data-lang="pt">Política de Privacidade</span>
+        <span data-lang="en">Privacy Policy</span>
+      </p>
+    </header>
+
+    <div class="lang-toggle">
+      <button type="button" id="pt" class="active">Português</button>
+      <button type="button" id="en">English</button>
+    </div>
+
+    <!-- Português -->
+    <div data-lang="pt">
+      <div class="summary">
+        <h2>Nada sai deste telemóvel</h2>
+        <p>
+          A Mumma não recolhe nada. Não há servidor, não há conta, não há análise de
+          utilização e não há publicidade. A app nunca faz um pedido à internet, para
+          nada — em modo de avião funciona exatamente igual, e essa é a forma de o
+          confirmares sem acreditares em nós.
+        </p>
+      </div>
+
+      <section>
+        <h2>O que fica guardado, e onde</h2>
+        <p>
+          Tudo o que escreves fica num ficheiro dentro da app, no telemóvel: a data
+          prevista, o diário e as suas fotografias, as sessões de pontapés, as
+          contrações, o humor e as consultas.
+        </p>
+        <p>
+          As fotografias do diário ficam na área privada da app e nunca na fototeca.
+          Não passam por álbuns partilhados, pelo iCloud Fotos, nem por nenhuma outra
+          app que tenha acesso à fototeca. Ficam também protegidas enquanto o telemóvel
+          estiver bloqueado.
+        </p>
+      </section>
+
+      <section>
+        <h2>O que é retirado das fotografias</h2>
+        <p>
+          Antes de guardar qualquer fotografia, a Mumma volta a gravá-la a partir da
+          imagem descodificada. Isso apaga todas as etiquetas que vinham com ela —
+          incluindo o local onde foi tirada, que as câmaras costumam escrever lá dentro
+          sem se notar.
+        </p>
+        <p>É por isso que uma fotografia exportada da Mumma não diz onde estavas.</p>
+      </section>
+
+      <section>
+        <h2>Permissões</h2>
+        <p>
+          A câmara é pedida quando abres a câmara do diário, e nunca antes. Serve para
+          tirar a foto da semana, que é guardada só dentro da app.
+        </p>
+        <p>
+          A fototeca não é pedida em momento nenhum. Quando escolhes uma fotografia,
+          isso acontece num seletor do próprio sistema que corre fora da app e devolve
+          apenas o que escolheste — a Mumma não tem, e não pode ter, acesso ao resto.
+        </p>
+        <p>
+          As notificações são pedidas se — e só se — ligares um lembrete. Nenhum
+          lembrete diz uma palavra sobre a gravidez, porque aparece no ecrã bloqueado,
+          onde qualquer pessoa o pode ler.
+        </p>
+      </section>
+
+      <section>
+        <h2>Cópias de segurança</h2>
+        <p>
+          Se fizeres cópia de segurança do iPhone, os dados da Mumma vão nela, como os
+          de qualquer outra app. Essa cópia é tua e está sujeita às condições da Apple,
+          não às nossas — a Mumma não a controla nem lhe acede.
+        </p>
+        <p>
+          Não há sincronização entre aparelhos. Se mudares de telemóvel, é a cópia de
+          segurança que leva o diário consigo.
+        </p>
+      </section>
+
+      <section>
+        <h2>Partilhar por tua iniciativa</h2>
+        <p>
+          Há dois sítios onde podes escolher enviar algo para fora: o resumo das
+          contrações e a exportação completa em PDF. Nos dois casos, o ficheiro é criado
+          no telemóvel e entregue à folha de partilha do sistema — para onde vai a partir
+          daí é decisão tua, e passa a estar nas mãos da app que escolheres.
+        </p>
+      </section>
+
+      <section>
+        <h2>Apagar</h2>
+        <p>
+          Em Definições há “apagar tudo”. Apaga a data prevista, o diário e as
+          fotografias, os pontapés, as contrações, o humor, as consultas, as
+          preferências e os lembretes agendados.
+        </p>
+        <p>
+          Não existe cópia em nenhum outro lado, o que significa duas coisas: ninguém
+          tem os teus dados, e não há forma de os recuperar depois. Se quiseres ficar
+          com eles, exporta antes.
+        </p>
+        <p>Apagar a app do telemóvel faz o mesmo, pelas mãos do iOS.</p>
+      </section>
+
+      <section>
+        <h2>Crianças</h2>
+        <p>
+          A Mumma não é dirigida a crianças e não recolhe dados de ninguém, de qualquer
+          idade.
+        </p>
+      </section>
+
+      <section>
+        <h2>Isto não é aconselhamento médico</h2>
+        <p>
+          A Mumma descreve o que registaste e nada mais. Não diz se estás em trabalho de
+          parto, não dá metas de pontapés e não interpreta nenhum número. Em caso de
+          dúvida, contacta o teu profissional de saúde.
+        </p>
+      </section>
+
+      <section>
+        <h2>Alterações</h2>
+        <p>
+          Se esta política mudar, muda numa atualização da app, com a data no fim desta
+          página. A versão que a app mostra viaja dentro dela e não pode mudar sem que
+          instales uma versão nova.
+        </p>
+      </section>
+    </div>
+
+    <!-- English -->
+    <div data-lang="en">
+      <div class="summary">
+        <h2>Nothing leaves this phone</h2>
+        <p>
+          Mumma collects nothing. There is no server, no account, no analytics and no
+          advertising. The app never makes a network request, for anything — in airplane
+          mode it works exactly the same, and that is how you can check without taking
+          our word for it.
+        </p>
+      </div>
+
+      <section>
+        <h2>What is stored, and where</h2>
+        <p>
+          Everything you write is kept in a file inside the app, on the phone: the due
+          date, the journal and its photographs, kick sessions, contractions, mood, and
+          appointments.
+        </p>
+        <p>
+          Journal photographs live in the app's own private area and never in your photo
+          library. They do not pass through shared albums, iCloud Photos, or any other app
+          with library access. They are also protected while the phone is locked.
+        </p>
+      </section>
+
+      <section>
+        <h2>What is stripped from photographs</h2>
+        <p>
+          Before saving any photograph, Mumma re-encodes it from the decoded image. That
+          removes every tag it arrived with — including the location where it was taken,
+          which cameras usually write inside without it being visible.
+        </p>
+        <p>That is why a photograph exported from Mumma does not say where you were.</p>
+      </section>
+
+      <section>
+        <h2>Permissions</h2>
+        <p>
+          The camera is requested when you open the journal's camera, and never before. It
+          is used to take the week's photo, which is saved only inside the app.
+        </p>
+        <p>
+          The photo library is never requested at all. Choosing a photograph happens in a
+          system picker that runs outside the app and returns only what you chose — Mumma
+          has no access to the rest, and cannot have.
+        </p>
+        <p>
+          Notifications are requested if — and only if — you turn a reminder on. No reminder
+          says a word about the pregnancy, because it appears on the Lock Screen, where
+          anyone can read it.
+        </p>
+      </section>
+
+      <section>
+        <h2>Backups</h2>
+        <p>
+          If you back up your iPhone, Mumma's data goes with it, like any other app's. That
+          backup is yours and is governed by Apple's terms, not ours — Mumma neither
+          controls nor accesses it.
+        </p>
+        <p>
+          There is no sync between devices. If you change phone, the backup is what carries
+          the journal across.
+        </p>
+      </section>
+
+      <section>
+        <h2>Sharing, when you choose to</h2>
+        <p>
+          There are two places you can choose to send something out: the contraction summary
+          and the full PDF export. In both cases the file is created on the phone and handed
+          to the system share sheet — where it goes from there is your decision, and becomes
+          the business of whichever app you pick.
+        </p>
+      </section>
+
+      <section>
+        <h2>Deleting</h2>
+        <p>
+          Settings has “delete everything”. It removes the due date, the journal and its
+          photographs, kicks, contractions, mood, appointments, preferences, and any
+          scheduled reminders.
+        </p>
+        <p>
+          No copy exists anywhere else, which means two things: nobody has your data, and
+          there is no way to recover it afterwards. If you want to keep it, export first.
+        </p>
+        <p>Deleting the app does the same, by iOS's hand.</p>
+      </section>
+
+      <section>
+        <h2>Children</h2>
+        <p>Mumma is not directed at children, and collects no data from anyone, of any age.</p>
+      </section>
+
+      <section>
+        <h2>This is not medical advice</h2>
+        <p>
+          Mumma describes what you recorded and nothing more. It does not say whether you
+          are in labour, sets no kick targets, and interprets no number. If in doubt,
+          contact your healthcare professional.
+        </p>
+      </section>
+
+      <section>
+        <h2>Changes</h2>
+        <p>
+          If this policy changes, it changes in an app update, with the date at the foot of
+          this page. The version the app shows travels inside it and cannot change unless
+          you install a new one.
+        </p>
+      </section>
+    </div>
+
+    <footer>
+      <p>
+        <span data-lang="pt">Última alteração: 3 de agosto de 2026</span>
+        <span data-lang="en">Last updated: 3 August 2026</span>
+      </p>
+      <p>
+        <span data-lang="pt">Dúvidas: <a href="mailto:licenses@aisquare.ai">licenses@aisquare.ai</a></span>
+        <span data-lang="en">Questions: <a href="mailto:licenses@aisquare.ai">licenses@aisquare.ai</a></span>
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    // The page opens in Portuguese and switches on click. No framework, no request:
+    // a privacy page that loads something from somewhere else is a poor advert for
+    // an app whose whole claim is that it loads nothing.
+    const root = document.documentElement;
+    for (const code of ["pt", "en"]) {
+      document.getElementById(code).addEventListener("click", () => {
+        root.setAttribute("data-active", code);
+        root.setAttribute("lang", code);
+        for (const other of ["pt", "en"]) {
+          document.getElementById(other).classList.toggle("active", other === code);
+        }
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pt" data-active="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mumma — Apoio</title>
+  <meta name="description" content="Apoio para a Mumma, uma app de gravidez que funciona inteiramente no telemóvel." />
+  <style>
+    :root {
+      --canvas: #FBF7F0;
+      --card: #FFFDF9;
+      --border: #E2D6C4;
+      --ink: #2E2A24;
+      --muted: #6B6355;
+      --accent: #9E6348;
+      --sage: #4D796D;
+      --on-sage: #FFFDF9;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --canvas: #1A1614;
+        --card: #221D18;
+        --border: #3A322A;
+        --ink: #F3ECE1;
+        --muted: #B3A899;
+        --accent: #D8A183;
+        --sage: #86AB9D;
+        --on-sage: #1A1614;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--muted);
+      background: var(--canvas);
+      line-height: 1.65;
+      padding: 64px 20px 80px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 620px; margin: 0 auto; }
+    h1 {
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      font-size: 40px; font-weight: 400; color: var(--ink); line-height: 1.1;
+    }
+    .tagline {
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      font-size: 21px; margin-top: 10px;
+    }
+    .lang-toggle { margin: 26px 0 30px; }
+    .lang-toggle button {
+      background: var(--card); border: 1px solid var(--border); color: var(--muted);
+      font: inherit; font-size: 14px; padding: 7px 16px; border-radius: 999px;
+      cursor: pointer; margin-right: 6px;
+    }
+    .lang-toggle button.active { background: var(--accent); color: var(--on-sage); border-color: var(--accent); }
+    .summary {
+      background: var(--sage); color: var(--on-sage);
+      border-radius: 22px; padding: 26px; margin-bottom: 28px;
+    }
+    .summary h2 {
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      font-size: 24px; font-weight: 400; margin-bottom: 8px;
+    }
+    .summary p { color: var(--on-sage); opacity: 0.92; font-size: 15px; }
+    section { margin-bottom: 26px; }
+    h2 {
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      font-size: 22px; font-weight: 400; color: var(--ink); margin-bottom: 8px;
+    }
+    p { font-size: 15.5px; margin-bottom: 10px; }
+    a { color: var(--accent); }
+    footer {
+      border-top: 1px solid var(--border); margin-top: 36px; padding-top: 20px;
+      font-size: 13.5px;
+    }
+    [data-lang] { display: none; }
+    html[data-active="pt"] [data-lang="pt"] { display: block; }
+    html[data-active="en"] [data-lang="en"] { display: block; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Mumma</h1>
+    <p class="tagline">
+      <span data-lang="pt">semana a semana, só no teu telemóvel</span>
+      <span data-lang="en">week by week, on your phone alone</span>
+    </p>
+
+    <div class="lang-toggle">
+      <button type="button" id="pt" class="active">Português</button>
+      <button type="button" id="en">English</button>
+    </div>
+
+    <div data-lang="pt">
+      <div class="summary">
+        <h2>Nada sai deste telemóvel</h2>
+        <p>
+          Sem servidor, sem conta, sem publicidade e sem um único pedido à internet.
+          Em modo de avião funciona exatamente igual.
+        </p>
+      </div>
+
+      <section>
+        <h2>Ajuda</h2>
+        <p>
+          Se algo não estiver a funcionar como esperavas, escreve para
+          <a href="mailto:licenses@aisquare.ai">licenses@aisquare.ai</a>. Diz que versão
+          do iOS tens e o que estavas a fazer — chega para começar.
+        </p>
+      </section>
+
+      <section>
+        <h2>Perder o diário</h2>
+        <p>
+          Como nada é guardado fora do telemóvel, não há cópia que possamos ir buscar.
+          Uma cópia de segurança do iPhone leva a Mumma consigo, e as Definições da app
+          têm “exportar tudo” para levares o diário num PDF que é teu.
+        </p>
+      </section>
+
+      <section>
+        <h2>Isto não é aconselhamento médico</h2>
+        <p>
+          A Mumma descreve o que registaste e nada mais. Em caso de dúvida, contacta o teu
+          profissional de saúde.
+        </p>
+      </section>
+
+      <section>
+        <h2>Privacidade</h2>
+        <p>
+          A política, por inteiro: <a href="privacy.html">política de privacidade</a>. A
+          mesma vem dentro da app, para não ser preciso ir à internet lê-la.
+        </p>
+      </section>
+    </div>
+
+    <div data-lang="en">
+      <div class="summary">
+        <h2>Nothing leaves this phone</h2>
+        <p>
+          No server, no account, no advertising, and not one network request. In airplane
+          mode it works exactly the same.
+        </p>
+      </div>
+
+      <section>
+        <h2>Help</h2>
+        <p>
+          If something is not working the way you expected, write to
+          <a href="mailto:licenses@aisquare.ai">licenses@aisquare.ai</a>. Say which iOS
+          version you are on and what you were doing — that is enough to start.
+        </p>
+      </section>
+
+      <section>
+        <h2>Losing the journal</h2>
+        <p>
+          Because nothing is stored off the phone, there is no copy for us to fetch. An
+          iPhone backup carries Mumma with it, and the app's Settings have “export
+          everything” so you can take the journal away as a PDF that is yours.
+        </p>
+      </section>
+
+      <section>
+        <h2>This is not medical advice</h2>
+        <p>
+          Mumma describes what you recorded and nothing more. If in doubt, contact your
+          healthcare professional.
+        </p>
+      </section>
+
+      <section>
+        <h2>Privacy</h2>
+        <p>
+          The policy in full: <a href="privacy.html">privacy policy</a>. The same text
+          ships inside the app, so reading it never requires going online.
+        </p>
+      </section>
+    </div>
+
+    <footer>
+      <p>
+        <span data-lang="pt">Mumma — feita para uma pessoa de cada vez.</span>
+        <span data-lang="en">Mumma — made for one person at a time.</span>
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    const root = document.documentElement;
+    for (const code of ["pt", "en"]) {
+      document.getElementById(code).addEventListener("click", () => {
+        root.setAttribute("data-active", code);
+        root.setAttribute("lang", code);
+        for (const other of ["pt", "en"]) {
+          document.getElementById(other).classList.toggle("active", other === code);
+        }
+      });
+    }
+  </script>
+</body>
+</html>
